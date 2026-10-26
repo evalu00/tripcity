@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.68 115.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6d6dee;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: GYSPixels-Regular, 'GYS Pixels';
+        font-size: 14px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M5.42,29.7c.74-.01,1.47-.02,2.21-.04v-14.18h7.31v-5.4h4.28v-2.48h4.5v-1.91h104.32v1.8h6.98v1.58h6.53v7.2h3.83v12.15h3.71v63.36h-3.94v15.08h-9.12v2.25h-7.31v1.58H22.38v-1.91h-9.34v-3.83h-4.5v-2.25c-1.05,0-2.1,0-3.15,0,.01-24.33.02-48.66.04-72.99Z"/>
+    <text class="cls-2" transform="translate(51.06 80.83)"><tspan x="0" y="0">BUMPS</tspan></text>
+  </g>
+  <path class="cls-1 rotating-icon" d="M82.22,29.66s-.08,0-.12,0h-.45v.07c-.3.08-.58.24-.81.48l-12.82,12.82h-10.13v13.36h6.77s.02,0,.03,0h22.23s.02,0,.03,0h8.07v-26.73h-12.79ZM81.64,51.56h-10.39v-4.93l10.39-10.39v15.32Z"/>
+</svg>

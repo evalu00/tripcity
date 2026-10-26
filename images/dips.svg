@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.68 115.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #70f081;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: GYSPixels-Regular, 'GYS Pixels';
+        font-size: 14px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M5.02,29.59c.74-.01,1.47-.02,2.21-.04v-14.18h7.31v-5.4h4.28v-2.48h4.5v-1.91h104.32v1.8h6.98v1.58h6.53v7.2h3.83v12.15h3.71v63.36h-3.94v15.08h-9.12v2.25h-7.31v1.58H21.98v-1.91h-9.34v-3.83h-4.5v-2.25c-1.05,0-2.1,0-3.15,0,.01-24.33.02-48.66.04-72.99Z"/>
+    <text class="cls-2" transform="translate(56.24 84.72)"><tspan x="0" y="0">DIPS</tspan></text>
+  </g>
+  <path class="cls-1" d="M99.36,34.16h-11.16v7.26l-8.6,8.6h-5.49l-8.63-8.63v-7.24h-11.16v11.16h6.87l9.71,9.71c.1.1.22.17.35.22v5.93h11.16v-5.78s.05-.04.08-.07l9.95-9.95s.04-.04.06-.07h6.85v-11.16h0Z"/>
+</svg>

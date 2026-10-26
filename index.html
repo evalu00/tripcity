@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tripcity</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="style.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <img src="./images/LOGOTYPE.svg" class="logo" alt="tripcity">
+
+    <nav>
+      <button id="how-button" type="button">
+        <img src="./images/howto.svg" alt="How to use">
+      </button>
+
+      <button id="about-button" type="button">
+        <img src="./images/about.svg" alt="About">
+      </button>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <div class="filters">
+
+      <button class="filter active" data-category="dips"
+              aria-label="Toggle dips" aria-pressed="true">
+
+        <svg viewBox="0 0 153.68 115.67">
+          <use href="#button-bg"/>
+
+          <text x="56.24" y="84.72" class="button-text">DIPS</text>
+
+          <path class="rotating-icon" fill="#70f081"
+                d="M99.36,34.16h-11.16v7.26l-8.6,8.6h-5.49l-8.63-8.63v-7.24h-11.16v11.16h6.87l9.71,9.71c.1.1.22.17.35.22v5.93h11.16v-5.78s.05-.04.08-.07l9.95-9.95s.04-.04.06-.07h6.85v-11.16h0Z"/>
+        </svg>
+
+      </button>
+
+
+      <button class="filter active" data-category="hazards"
+              aria-label="Toggle hazards" aria-pressed="true">
+
+        <svg viewBox="0 0 153.68 115.67">
+          <use href="#button-bg"/>
+
+          <text x="41.68" y="87.18" class="button-text">HAZARDS</text>
+
+          <g class="rotating-icon" fill="#76dee7">
+            <rect x="68.2" y="37.2" width="16.41" height="16.41"/>
+            <circle cx="76.4" cy="27.73" r="4.32"/>
+            <circle cx="94.09" cy="45.41" r="4.32"/>
+            <circle cx="76.4" cy="63.09" r="4.32"/>
+            <circle cx="59.47" cy="45.41" r="4.32"/>
+          </g>
+        </svg>
+
+      </button>
+
+
+      <button class="filter active" data-category="bumps"
+              aria-label="Toggle bumps" aria-pressed="true">
+
+        <svg viewBox="0 0 153.68 115.67">
+          <use href="#button-bg"/>
+
+          <text x="51.06" y="80.83" class="button-text">BUMPS</text>
+
+          <path class="rotating-icon" fill="#6d6dee"
+                d="M82.22,29.66s-.08,0-.12,0h-.45v.07c-.3.08-.58.24-.81.48l-12.82,12.82h-10.13v13.36h6.77s.02,0,.03,0h22.23s.02,0,.03,0h8.07v-26.73h-12.79ZM81.64,51.56h-10.39v-4.93l10.39-10.39v15.32Z"/>
+        </svg>
+
+      </button>
+
+
+      <button class="filter active" data-category="foliage"
+              aria-label="Toggle foliage" aria-pressed="true">
+
+        <svg viewBox="0 0 153.68 115.67">
+          <use href="#button-bg"/>
+
+          <text x="40.98" y="86.22" class="button-text">FOLIAGE</text>
+
+          <path class="rotating-icon" fill="#d5ec4c"
+                d="M90.66,59.44c-1.95.36-3.82-.93-4.17-2.88-.09-.49-.08-.97.02-1.42l-8.84-7.22c-.52-.24-1.13-.25-1.65,0l-8.84,7.2s.02.08.02.12c.36,1.95-.93,3.82-2.88,4.17-1.95.36-3.82-.93-4.17-2.88s.93-3.82,2.88-4.17c.45-.08.89-.08,1.31,0l7.3-8.85c.24-.52.25-1.13,0-1.65l-7.67-9.41c-.1.03-.2.05-.3.07-1.95.36-3.82-.93-4.17-2.88s.93-3.82,2.88-4.17c1.95-.36,3.82.93,4.17,2.88.08.45.08.89,0,1.31l9.49,7.84c.52.24,1.13.25,1.65,0l9.36-7.54c-.16-1.82,1.09-3.51,2.92-3.84,1.95-.36,3.82.93,4.17,2.88s-.93,3.82-2.88,4.17c-.67.12-1.33.05-1.92-.18l-7.28,8.91c-.24.52-.25,1.13,0,1.65l7.15,8.87s.09-.02.14-.03c1.95-.36,3.82.93,4.17,2.88.36,1.95-.93,3.82-2.88,4.17Z"/>
+        </svg>
+
+      </button>
+
+
+      <button class="filter active" data-category="cracks"
+              aria-label="Toggle cracks" aria-pressed="true">
+
+        <svg viewBox="0 0 153.68 115.67">
+          <use href="#button-bg"/>
+
+          <text x="42.39" y="84.49" class="button-text cracks-text">CRACKS</text>
+
+          <polygon class="rotating-icon" fill="#ec65bd"
+                   points="69.25 39.65 53.21 65.48 76.85 43.24 100.47 60.62 81.74 35.12 84.27 30.96 77.32 34.4 71.71 26.86 74.03 34.52 61.01 31.01 69.25 39.65"/>
+        </svg>
+
+      </button>
+
+    </div>
+
+
+    <div class="map">
+      <div class="road">
+
+        <div class="asset dips" style="top: 15%; left: 25%;">
+          <div class="shape circle"></div>
+        </div>
+
+        <div class="asset dips" style="top: 65%; left: 55%;">
+          <div class="shape circle"></div>
+        </div>
+
+        <div class="asset hazards" style="top: 30%; left: 60%;">
+          <div class="shape triangle"></div>
+        </div>
+
+        <div class="asset hazards" style="top: 80%; left: 30%;">
+          <div class="shape triangle"></div>
+        </div>
+
+        <div class="asset bumps" style="top: 45%; left: 40%;">
+          <div class="shape square"></div>
+        </div>
+
+        <div class="asset bumps" style="top: 20%; left: 75%;">
+          <div class="shape square"></div>
+        </div>
+
+        <div class="asset foliage" style="top: 55%; left: 80%;">
+          <div class="shape diamond"></div>
+        </div>
+
+        <div class="asset cracks" style="top: 75%; left: 70%;">
+          <div class="shape rectangle"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <button id="close-popup" aria-label="Close popup">&times;</button>
+      <h2 id="popup-title"></h2>
+      <p id="popup-text"></p>
+    </div>
+  </div>
+
+
+  <svg width="0" height="0" aria-hidden="true">
+    <defs>
+      <path id="button-bg"
+            d="M5.02,29.59c.74-.01,1.47-.02,2.21-.04v-14.18h7.31v-5.4h4.28v-2.48h4.5v-1.91h104.32v1.8h6.98v1.58h6.53v7.2h3.83v12.15h3.71v63.36h-3.94v15.08h-9.12v2.25h-7.31v1.58H21.98v-1.91h-9.34v-3.83h-4.5v-2.25c-1.05,0-2.1,0-3.15,0,.01-24.33.02-48.66.04-72.99Z"/>
+    </defs>
+  </svg>
+
+</body>
+</html>

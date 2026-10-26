@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132.57 74.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: GYSPixels-Medium, 'GYS Pixels';
+        font-size: 22.18px;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <path d="M5.7,20.29c.62,0,1.24-.02,1.86-.02v-8.82h6.16v-3.36h3.6v-1.54h3.79v-1.19h87.82v1.12h5.87v.98h5.49v4.48h3.22v7.56h3.13v39.42h-3.32v9.38h-7.67v1.4h-6.16v.98H19.98v-1.19h-7.86v-2.38h-3.79v-1.4c-.88,0-1.77,0-2.65,0,0-15.14.02-30.28.03-45.42Z"/>
+  <text class="cls-1" transform="translate(27.83 46.77)"><tspan x="0" y="0">ABOUT</tspan></text>
+</svg>

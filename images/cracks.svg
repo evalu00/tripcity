@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.68 115.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ec65bd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: GYSPixels-Regular, 'GYS Pixels';
+        font-size: 15.27px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path d="M5.02,29.78c.74-.01,1.47-.02,2.21-.04v-14.18h7.31v-5.4h4.28v-2.48h4.5v-1.91h104.32v1.8h6.98v1.58h6.53v7.2h3.83v12.15h3.71v63.36h-3.94v15.08h-9.12v2.25h-7.31v1.58H21.98v-1.91h-9.34v-3.83h-4.5v-2.25c-1.05,0-2.1,0-3.15,0,.01-24.33.02-48.66.04-72.99Z"/>
+    <text class="cls-2" transform="translate(42.39 84.49)"><tspan x="0" y="0">CRACKS</tspan></text>
+  </g>
+  <polygon class="cls-1" points="69.25 39.65 53.21 65.48 76.85 43.24 100.47 60.62 81.74 35.12 84.27 30.96 77.32 34.4 71.71 26.86 74.03 34.52 61.01 31.01 69.25 39.65"/>
+</svg>
