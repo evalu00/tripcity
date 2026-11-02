@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.01 74.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: GYSPixels-Medium, 'GYS Pixels';
+        font-size: 22.18px;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: .02em;
+      }
+
+      .cls-4 {
+        fill: #d87244;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="M4.81,21.05h2.06v-4.79h5.62v-7.18h17.05v-4.01h73.68v-1.97h102.71v2.32h28.46v4.18h11.78v3.13h2.18v5.92h1.64v45.61h-6.65v4.41h-9.49v2.2h-29.66v1.51h-39.69v-3.37h-37.18v1.97h-31.18v-2.2H23.19v-3.02h-11.56v-2.55c-2.22-.06-4.45-.12-6.67-.19-.05-13.99-.1-27.99-.16-41.98Z"/>
+  <text class="cls-1" transform="translate(28.9 45.71)"><tspan x="0" y="0">SIGN P</tspan><tspan class="cls-2" x="88.72" y="0">E</tspan><tspan x="103.81" y="0">T</tspan><tspan class="cls-2" x="119.33" y="0">IT</tspan><tspan x="149.5" y="0">I</tspan><tspan class="cls-3" x="165.02" y="0">O</tspan><tspan x="183.21" y="0">N</tspan></text>
+</svg>

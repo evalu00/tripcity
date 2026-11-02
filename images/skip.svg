@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.57 74.55">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: GYSPixels-Medium, 'GYS Pixels';
+        font-size: 22.18px;
+        font-weight: 500;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: GYSPixels-Regular, 'GYS Pixels';
+        font-size: 38.35px;
+      }
+    </style>
+  </defs>
+  <path d="M3.86,20.65h1.11v-4.79h3.03v-7.18h9.2v-4.01h39.76v-1.97h55.42v2.32h15.35v4.18h6.35v3.13h1.18v5.92h.88v45.61h-3.59v4.41h-5.12v2.2h-16v1.51h-21.41v-3.37h-20.06v1.97h-16.83v-2.2H13.78v-3.02h-6.24v-2.55c-1.2-.06-2.4-.12-3.6-.19-.03-13.99-.06-27.99-.08-41.98Z"/>
+  <text class="cls-1" transform="translate(27.96 44.85)"><tspan x="0" y="0">SKIP</tspan></text>
+  <text class="cls-2" transform="translate(94.85 49.71) scale(1.05 1)"><tspan x="0" y="0">→</tspan></text>
+</svg>
