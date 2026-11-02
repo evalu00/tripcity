@@ -519,12 +519,12 @@ main {
   background: transparent;
   color: #FFFFFF;
   font-family: "Squarevetica", sans-serif;
-  font-size: clamp(14px, calc(19.33 * var(--unit)), 27px);
+  font-size: clamp(13px, calc(15.33 * var(--unit)), 16px);
 }
 
 #petition-form input:focus {
-  outline: 2px solid #d87244;
-  outline-offset: 3px;
+  outline: 4px solid #d87244;
+  outline-offset: 4px;
 }
 
 /* petition submit */
@@ -566,18 +566,6 @@ main {
   opacity: 1;
 }
 
-/* petition confirmation */
-
-#petition-message {
-  margin: calc(20 * var(--unit)) 0 0;
-  font-family: "Squarevetica", sans-serif;
-  font-size: clamp(13px, calc(17.33 * var(--unit)), 25px);
-  line-height: 1.5;
-}
-
-#petition-message:empty {
-  display: none;
-}
 
 /* map markers */
 

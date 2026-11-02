@@ -326,9 +326,6 @@ petitionForm.addEventListener("submit", (event) => {
     lastName
   });
 
-  petitionMessage.textContent =
-    "Thanks for supporting Tripcity! This is a demo, so your signature has not been officially submitted.";
-
   petitionForm.reset();
 });
 
