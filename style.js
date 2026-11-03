@@ -52,6 +52,7 @@ loadingVideo.play().catch(() => {
   if (videoStage === 1) playSecondVideo();
 });
 
+
 // click logo (replay intro)
 
 document.querySelector("#logo-button").addEventListener("click", (event) => {
@@ -109,10 +110,30 @@ const popupTitle = document.querySelector("#popup-title");
 const popupText = document.querySelector("#popup-text");
 
 
-// photo gallery
+// photo and video gallery
 
 const aboutGallery = document.querySelector("#about-gallery");
 const galleryImage = document.querySelector("#gallery-image");
+
+// create video element automatically
+
+const galleryVideo = document.createElement("video");
+
+galleryVideo.id = "gallery-video";
+galleryVideo.muted = true;
+galleryVideo.playsInline = true;
+galleryVideo.controls = true;
+galleryVideo.preload = "metadata";
+
+galleryVideo.style.display = "none";
+galleryVideo.style.width = "100%";
+galleryVideo.style.height = "100%";
+galleryVideo.style.objectFit = "cover";
+
+galleryImage.insertAdjacentElement("afterend", galleryVideo);
+
+
+// gallery files
 
 const galleryPhotos = [
   "./images/3 copy.png",
@@ -122,21 +143,57 @@ const galleryPhotos = [
   "./images/13 copy.png",
   "./images/21 copy.png",
   "./images/22 copy.png",
-  "./images/28 copy.png"
+  "./images/28 copy.png",
+  "./videos/videomock.mp4"
 ];
 
 let galleryIndex = 0;
 let galleryTimer = null;
 let galleryPaused = false;
 
+
+// display current photo or video
+
 function showGalleryPhoto() {
-  galleryImage.src = galleryPhotos[galleryIndex];
+  const currentFile = galleryPhotos[galleryIndex];
+
+  galleryVideo.pause();
+
+  if (currentFile.endsWith(".mp4")) {
+
+    galleryImage.style.display = "none";
+    galleryVideo.style.display = "block";
+
+    if (galleryVideo.getAttribute("src") !== currentFile) {
+      galleryVideo.src = currentFile;
+      galleryVideo.load();
+    }
+
+    galleryVideo.currentTime = 0;
+
+    galleryVideo.play().catch((error) => {
+      console.error("Gallery video could not play:", error);
+    });
+
+  } else {
+
+    galleryVideo.style.display = "none";
+    galleryImage.style.display = "block";
+
+    galleryImage.src = currentFile;
+  }
 }
+
+
+// next gallery item
 
 function nextGalleryPhoto() {
   galleryIndex = (galleryIndex + 1) % galleryPhotos.length;
   showGalleryPhoto();
 }
+
+
+// previous gallery item
 
 function previousGalleryPhoto() {
   galleryIndex =
@@ -145,10 +202,16 @@ function previousGalleryPhoto() {
   showGalleryPhoto();
 }
 
+
+// stop automatic slideshow
+
 function stopGallery() {
   clearInterval(galleryTimer);
   galleryTimer = null;
 }
+
+
+// start automatic slideshow
 
 function startGallery() {
   stopGallery();
@@ -162,18 +225,41 @@ function startGallery() {
   if (!popup.classList.contains("open")) return;
   if (!popupContent.classList.contains("about-mode")) return;
 
+  // allow video to finish before advancing
+
+  if (galleryPhotos[galleryIndex].endsWith(".mp4")) {
+    return;
+  }
+
   galleryTimer = setInterval(nextGalleryPhoto, 3500);
 }
+
+
+// automatically advance when video finishes
+
+galleryVideo.addEventListener("ended", () => {
+  nextGalleryPhoto();
+  startGallery();
+});
+
+
+// next button
 
 document.querySelector("#gallery-next").addEventListener("click", () => {
   nextGalleryPhoto();
   startGallery();
 });
 
+
+// previous button
+
 document.querySelector("#gallery-prev").addEventListener("click", () => {
   previousGalleryPhoto();
   startGallery();
 });
+
+
+// pause slideshow on hover
 
 aboutGallery.addEventListener("mouseenter", () => {
   galleryPaused = true;
@@ -184,6 +270,9 @@ aboutGallery.addEventListener("mouseleave", () => {
   galleryPaused = false;
   startGallery();
 });
+
+
+// pause slideshow on focus
 
 aboutGallery.addEventListener("focusin", () => {
   galleryPaused = true;
@@ -276,6 +365,7 @@ A street this important deserves more care, and we don't think that's too much t
 function closePopup() {
   popup.classList.remove("open");
   stopGallery();
+  galleryVideo.pause();
 }
 
 document.querySelector("#close-popup").addEventListener("click", closePopup);
@@ -484,6 +574,9 @@ const videoFiles = {
   bumps: "./videos/bumps.webm"
 };
 
+
+// start marker video
+
 function startMarkerVideo(asset, category) {
   let video = asset.querySelector(".marker-video");
 
@@ -522,6 +615,9 @@ function startMarkerVideo(asset, category) {
     console.error("marker playback failed:", category, error);
   });
 }
+
+
+// stop marker video
 
 function stopMarkerVideo(asset) {
   asset.classList.remove("video-playing");
